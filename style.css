@@ -1,9 +1,285 @@
+/*BARRA NAVEGACION INICIO*/
+nav {
+    background-color: rgb(47, 59, 56);
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+    font-size: 25px;
+  }
+
+  nav ul li a:hover {
+    color: rgb(252, 243, 243);
+    font-family: Arial, Helvetica, sans-serif 150% cursive;
+  }
+
+  nav ul li a.about {
+    
+    color: rgb(236, 225, 225);
+    font-family: Arial, Helvetica, sans-serif 150% cursive;
+  }
+
+  nav ul li a.contact {
+    color: rgb(236, 229, 229);
+    font-family: Arial, Helvetica, sans-serif 150% cursive;
+  }
+/*BARRA NAVEGACION FIN*/
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
+  background-color: rgb(25, 31, 31);
+  text-align: center;
+  min-height: 100vh;
 }
 
-h1 {
-    color: #333;
+p {
+  color: rgb(247, 243, 243);
+  font-size: 25px;
 }
+
+footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.336);
+  color: rgb(253, 242, 242);
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 1px;
+  z-index: 1000;
+}
+
+h1{
+    color: rgb(187, 235, 199);
+    font-size: 40px;
+    padding: top;   
+}
+
+h2{
+    color: rgb(251, 253, 253);
+    font-size: 35px;
+}
+
+#about {
+ background-color: rgb(25, 31, 31);
+
+}
+
+/*PARTE CONTACTANOS*/
+h1.titcontact{
+    font-size: 40;
+    color: rgb(240, 232, 232);
+    text-shadow: 1px 3px 2px black;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .contact-section {
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .form-container {
+      flex: 1; 
+      padding-right: 20px; 
+    }
+    
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    form label {
+      margin-bottom: 10px;
+      color: rgb(242, 244, 247);
+      font: size 17px;
+    }
+    
+    form input,
+    form textarea {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* BOTON ENVIAR, CONTACTANOS  */
+
+    form button {
+      padding: 10px;
+      background-color: rgb(255, 253, 253);
+      color: rgb(247, 245, 245);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 30%;
+    }
+    
+    form button:hover {
+      background-color: rgb(5, 5, 5);
+    }
+    
+    .image-container {
+      flex: 1; 
+    }
+    
+    .image-container img {
+      max-width: 100%; 
+      height: auto;
+      border-radius: 10px; 
+    }
+    
+    footer p {
+      margin: 0;
+    }
+    /*TERMINA CONTACTANOS*/
+
+    /*#img1{
+        width: 700px;
+    
+    }
+
+    #img2{
+     
+      width: 700px;
+    }
+
+    #img3{
+        width: 700px;
+    }
+
+    #img4{
+        width: 700px;
+    }
+    #img5{
+        width: 700px;
+        height: 700px;
+    }
+
+    #img6{
+        width: 700px;
+        
+    }*/
+
+    .carousel {
+        position: relative;
+        max-width: 800px;
+        margin: auto;
+        overflow: hidden;
+      }
+       
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+       
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+       
+      .slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+      }
+       
+      input[type="radio"] {
+        display: none;
+      }
+       
+      .navigation {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+       
+      .nav-btn {
+        cursor: pointer;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: white;
+        border: 1px solid #ccc;
+        transition: background-color 0.3s;
+      }
+       
+      .nav-btn:hover {
+        background-color: #ddd;
+      }
+       
+      /* Mostrar el slide correspondiente basado en el input seleccionado */
+      #slide1:checked ~ .slides {
+        transform: translateX(0%);
+        
+      }
+       
+      #slide2:checked ~ .slides {
+        transform: translateX(-100%);
+        
+      }
+       
+      #slide3:checked ~ .slides {
+        transform: translateX(-200%);
+        
+      }
+       
+      #slide4:checked ~ .slides {
+        transform: translateX(-300%);
+        
+      }
+      
+       
+      #slide5:checked ~ .slides {
+        transform: translateX(-400%);
+      }
+       
+      #slide6:checked ~ .slides {
+        transform: translateX(-500%);
+      }
+
+      .text-overlay {
+        position: absolute;
+        top: 10px; 
+        left: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+      /*fin carrusel*/

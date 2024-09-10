@@ -1,13 +1,83 @@
+<!-- PAGINA PRINCIPAL  -->
+ 
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- LLAMAR ARCHIVO CSS  -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>MeowWare</title>
 </head>
 <body>
-    <h1>¡Hola Mundo!</h1>
-    <p>Bienvenido a mi primera página web.</p>
+    <!-- INICIO BARRA SUPERIOR  -->
+    <nav>
+        <ul>
+          <li><a class="index" href="./index.html">Inicio</a></li>
+          <li><a class="about" href ="./about.html">Quienes Somos</a></li>
+          <li><a class="contact" href="./contacto.html">Contacto</a></li>
+        </ul>
+    </nav><br><br><br>
+    <!-- FIN BARRA SUPERIOR  -->
+
+    <div>
+        <h1>Bienvenido al Blog de los Gatos</h1>
+        <p></p>
+    </div>
+
+    <section>
+        <h1 id="Titulodef">Gatos: Compañeros misteriosos y encantadores</h1>
+        <p id="parrafodef">Los gatos han capturado la imaginación y el corazón de las personas a lo largo de la historia. Su presencia elegante, sus movimientos sigilosos y su actitud a veces independiente los convierten en compañeros fascinantes. En este blog, exploraremos por qué los gatos son tan especiales y cómo pueden enriquecer nuestras vidas de formas sorprendentes.</p>
+    </section>
+    <h2>Nuestros gatos</h2>
+
+    <div class="carousel">
+        <input type="radio" id="slide1" name="carousel" checked>
+        <input type="radio" id="slide2" name="carousel">
+        <input type="radio" id="slide3" name="carousel">
+        <input type="radio" id="slide4" name="carousel">
+        <input type="radio" id="slide5" name="carousel">
+        <input type="radio" id="slide6" name="carousel">
+     
+        <div class="slides">
+            <div class="slide" id="s1"> 
+                <div class="text-overlay">ARES</div>
+                <img src="fotos/Ares.jpg" alt= "Slide 1"> 
+                
+            </div>
+            <div class="slide" id="s2"> 
+                <div class="text-overlay">RUBIA</div>
+                <img src="fotos/gato alexis.jpg" alt="Slide 2">
+            </div>
+            <div class="slide" id="s3"> 
+                <div class="text-overlay">LEON</div>
+                <img src="fotos/gato10.jpg" alt="Slide 3">
+            </div>
+            <div class="slide" id="s4"> 
+                <div class="text-overlay">KITTY</div>
+                <img src="fotos/kity.jpg" alt="Slide 4">
+            </div>
+            <div class="slide" id="s5"> 
+                <div class="text-overlay">LEON</div>
+                <img src="fotos/leon2.jpg" alt="Slide 5">
+            </div>
+            <div class="slide" id="s6"> 
+                <div class="text-overlay">REJJIE</div>
+                <img src="fotos/Rejjiei.jpg" alt="Slide 6">
+            </div>
+        </div>
+     
+        <div class="navigation">
+            <label for="slide1" class="nav-btn">●</label>
+            <label for="slide2" class="nav-btn">●</label>
+            <label for="slide3" class="nav-btn">●</label>
+            <label for="slide4" class="nav-btn">●</label>
+            <label for="slide5" class="nav-btn">●</label>
+            <label for="slide6" class="nav-btn">●</label>
+        </div>
+    </div>
 </body>
 </html>
+
+
