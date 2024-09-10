@@ -24,8 +24,13 @@ nav {
     color: yellow;
   }
 
-  /* Para el enlace activo */
-  nav ul li a.current {
-    color: yellow;
+  nav ul li a.about {
+    color: red;
     font-weight: bold;
   }
+
+  nav ul li a.contact {
+    color: red;
+    font-weight: bold;
+  }
+  
