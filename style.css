@@ -1,9 +1,31 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-}
+nav {
+    background-color: #333;
+    padding: 10px;
+  }
 
-h1 {
-    color: #333;
-}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+  nav ul li a:hover {
+    color: yellow;
+  }
+
+  /* Para el enlace activo */
+  nav ul li a.current {
+    color: yellow;
+    font-weight: bold;
+  }
