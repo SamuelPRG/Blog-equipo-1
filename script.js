@@ -3,7 +3,7 @@ function enviarFormulario() {
  
     document.getElementById('nombre').value = '';
     document.getElementById('apellido').value = '';
-    document.getElementById('correo').value = '';
+    document.getElementById('correu').value = '';
     document.getElementById('mensaje').value = '';
 }
  
